@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>HTTP</title>
+      <link href="/2025/12/04/1/"/>
+      <url>/2025/12/04/1/</url>
+      
+        <content type="html"><![CDATA[<p>HTTP 返回状态码是服务器对客户端请求的三位数字响应标识，依据首位数字分为五大类，分别对应信息提示、请求成功、重定向、客户端错误和服务器错误，以下是各类常见状态码的详细解析：</p><ol><li><p><strong>1xx（信息性状态码）</strong></p><p> 这类状态码较少被用户感知，主要用于告知客户端请求已被接收，需继续后续操作。</p><ul><li><strong>100 Continue</strong>：客户端发送大文件等请求前，服务器先确认可接收，示意客户端继续发送剩余请求内容。</li><li><strong>101 Switching Protocols</strong>：服务器同意按客户端请求切换通信协议，比如从 HTTP 协议升级为 WebSocket 协议以实现实时通信。</li></ul></li><li><p><strong>2xx（成功状态码）</strong></p><p> 代表客户端的请求被服务器成功接收、理解并处理，是请求交互中的理想结果。</p><ul><li><strong>200 OK</strong>：最常用的成功状态码，比如浏览器正常加载网页、调用 API 成功获取数据时，服务器都会返回该状态码。</li><li><strong>201 Created</strong>：请求成功且服务器新建了资源，常见于提交表单创建账号、上传文件生成新存储资源等场景，响应中通常会附带新资源的访问地址。</li><li><strong>204 No Content</strong>：请求成功执行，但响应体无任何内容，比如调用删除接口成功删除数据后，服务器仅返回结果确认，无需返回数据。</li><li><strong>206 Partial Content</strong>：用于分块下载或断点续传场景，客户端请求资源的部分内容时，服务器仅返回对应范围的内容，比如拖动视频进度条加载指定片段。</li></ul></li><li><p><strong>3xx（重定向状态码）</strong></p><p> 表示客户端需通过进一步的跳转操作，才能完成原本的请求，常涉及 URL 地址的切换。</p><ul><li><strong>301 Moved Permanently</strong>：资源已永久迁移到新 URL，比如网站更换域名后，旧域名访问会触发该状态码，搜索引擎也会更新索引指向新地址。</li><li><strong>302 Found</strong>：资源临时重定向到新 URL，比如网站临时维护时，将用户跳转至维护公告页，后续资源恢复后仍需使用原 URL 访问。</li><li><strong>304 Not Modified</strong>：客户端缓存的资源未更新，服务器无需重复返回完整内容，比如浏览器再次访问网页时，若网页未修改，服务器返回该状态码，浏览器直接使用本地缓存。</li><li><strong>307 Temporary Redirect</strong>：临时重定向，且会保留客户端原请求方法，比如客户端用 POST 方式提交数据触发重定向后，仍以 POST 方式访问新地址。</li></ul></li><li><p><strong>4xx（客户端错误状态码）</strong></p><p> 问题出在客户端请求本身，比如格式错误、权限不足等，导致服务器无法正常处理请求。</p><ul><li><strong>400 Bad Request</strong>：请求存在语法错误或无效参数，比如 JSON 格式错误、必填参数缺失等。</li><li><strong>401 Unauthorized</strong>：请求需身份验证，比如未登录就访问需要登录的页面，或 API 调用缺少有效 Token。</li><li><strong>403 Forbidden</strong>：服务器理解请求，但因客户端权限不足拒绝执行，比如普通用户尝试访问管理员后台。</li><li><strong>404 Not Found</strong>：最常见的错误状态码，服务器找不到请求的资源，多因 URL 拼写错误或资源已被删除。</li><li><strong>429 Too Many Requests</strong>：客户端请求过于频繁，触发服务器限流策略，比如短时间内多次调用同一 API 超出限制。</li></ul></li><li><p><strong>5xx（服务器错误状态码）</strong></p><p> 客户端请求本身无问题，但服务器在处理请求过程中发生内部错误，导致请求失败。</p><ul><li><strong>500 Internal Server Error</strong>：通用服务器内部错误，比如代码出现异常、数据库连接失败等，具体原因需查看服务器日志排查。</li><li><strong>502 Bad Gateway</strong>：多出现于代理服务器场景，比如 Nginx 作为代理时，从后端应用服务器收到无效响应。</li><li><strong>503 Service Unavailable</strong>：服务器暂时无法处理请求，常见原因是服务器过载、正在停机维护，通常会提示用户稍后重试。</li><li><strong>504 Gateway Timeout</strong>：代理服务器等待上游服务器响应超时，比如后端服务处理请求过慢，导致代理服务器未及时收到结果。</li></ul></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/12/04/hello-world/"/>
+      <url>/2025/12/04/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常见文件格式的16进制特征</title>
+      <link href="/2022/10/28/11/"/>
+      <url>/2022/10/28/11/</url>
+      
+        <content type="html"><![CDATA[<p>文件的 16 进制特征（也称 “魔数” Magic Number）是文件开头的固定字节序列，用于标识文件类型，以下是各类常见格式的核心特征，按文件类型分类整理，便于快速识别：</p><h4 id="一、文档类"><a href="#一、文档类" class="headerlink" title="一、文档类"></a>一、文档类</h4><table><thead><tr><th>文件格式</th><th>扩展名</th><th>核心 16 进制特征（开头字节）</th><th>补充说明</th></tr></thead><tbody><tr><td>PDF</td><td>.pdf</td><td><code>25 50 44 46 2D</code>（%PDF-）</td><td>部分 PDF 开头可能紧跟版本号，如<code>25 50 44 46 2D 31 2E</code>（%PDF-1.）</td></tr><tr><td>Word（旧版）</td><td>.doc</td><td><code>D0 CF 11 E0 A1 B1 1A E1</code></td><td>OLE 复合文档格式，Excel（.xls）、PPT（.ppt）旧版也用此特征</td></tr><tr><td>Word（新版）</td><td>.docx</td><td><code>50 4B 03 04</code></td><td>本质是 ZIP 压缩包，所有 Office 2007 + 格式（.xlsx&#x2F;.pptx 等）均以此开头</td></tr><tr><td>TXT（UTF-8 BOM）</td><td>.txt</td><td><code>EF BB BF</code></td><td>无 BOM 的 TXT 无固定特征，仅靠内容判断；ANSI 编码 TXT 无开头特征</td></tr><tr><td>Markdown</td><td>.md</td><td>无固定特征</td><td>纯文本格式，无专属魔数，需结合内容识别</td></tr></tbody></table><h4 id="二、图片类"><a href="#二、图片类" class="headerlink" title="二、图片类"></a>二、图片类</h4><table><thead><tr><th>文件格式</th><th>扩展名</th><th>核心 16 进制特征（开头字节）</th><th>补充说明</th></tr></thead><tbody><tr><td>JPG&#x2F;JPEG</td><td>.jpg&#x2F;.jpeg</td><td><code>FF D8 FF</code></td><td>结尾通常为<code>FF D9</code>，部分 JPG 开头紧跟<code>E0</code>&#x2F;<code>E1</code>等（如<code>FF D8 FF E0</code>）</td></tr><tr><td>PNG</td><td>.png</td><td><code>89 50 4E 47 0D 0A 1A 0A</code></td><td>辨识度极高，固定 8 字节开头</td></tr><tr><td>GIF</td><td>.gif</td><td><code>47 49 46 38</code>（GIF8）</td><td>后续紧跟<code>37 61</code>（GIF87a）或<code>39 61</code>（GIF89a）</td></tr><tr><td>BMP</td><td>.bmp</td><td><code>42 4D</code>（BM）</td><td>前 2 字节固定为 BM，后续为文件大小等信息</td></tr><tr><td>WebP</td><td>.webp</td><td><code>52 49 46 46</code> 后跟文件大小，再<code>57 45 42 50</code></td><td>完整开头示例：<code>52 49 46 46 ?? ?? ?? ?? 57 45 42 50</code></td></tr><tr><td>ICO</td><td>.ico</td><td><code>00 00 01 00</code></td><td>前 4 字节固定，用于图标文件</td></tr></tbody></table><h4 id="三、视频-音频类"><a href="#三、视频-音频类" class="headerlink" title="三、视频 &#x2F; 音频类"></a>三、视频 &#x2F; 音频类</h4><table><thead><tr><th>文件格式</th><th>扩展名</th><th>核心 16 进制特征（开头字节）</th><th>补充说明</th></tr></thead><tbody><tr><td>MP4</td><td>.mp4</td><td><code>00 00 00 18 66 74 79 70</code>（ftyp）</td><td>或<code>00 00 00 20 66 74 79 70</code>，后续通常跟<code>69 73 6F 6D</code>（isom）</td></tr><tr><td>MP3</td><td>.mp3</td><td><code>49 44 33</code>（ID3）或 <code>FF FB</code>&#x2F;<code>FF FA</code></td><td>带 ID3 标签的 MP3 开头为 ID3，裸 MP3 音频帧开头为<code>FF FB</code></td></tr><tr><td>AVI</td><td>.avi</td><td><code>52 49 46 46</code> 后跟文件大小，再<code>41 56 49 20</code></td><td>完整开头：<code>52 49 46 46 ?? ?? ?? ?? 41 56 49 20</code></td></tr><tr><td>MKV</td><td>.mkv</td><td><code>1A 45 DF A3</code></td><td>固定 4 字节开头，辨识度高</td></tr><tr><td>WAV</td><td>.wav</td><td><code>52 49 46 46</code> 后跟文件大小，再<code>57 41 56 45</code></td><td>开头为 RIFF+WAVE 组合，示例：<code>52 49 46 46 ?? ?? ?? ?? 57 41 56 45</code></td></tr></tbody></table><h4 id="四、压缩包-可执行文件类"><a href="#四、压缩包-可执行文件类" class="headerlink" title="四、压缩包 &#x2F; 可执行文件类"></a>四、压缩包 &#x2F; 可执行文件类</h4><table><thead><tr><th>文件格式</th><th>扩展名</th><th>核心 16 进制特征（开头字节）</th><th>补充说明</th></tr></thead><tbody><tr><td>ZIP</td><td>.zip</td><td><code>50 4B 03 04</code>（标准）&#x2F; <code>50 4B 05 06</code>（空包）&#x2F; <code>50 4B 07 08</code>（分卷）</td><td>多数压缩包为<code>50 4B 03 04</code>，docx&#x2F;xlsx 等本质是 ZIP，特征一致</td></tr><tr><td>RAR</td><td>.rar</td><td><code>52 61 72 21 1A 07 00</code>（RAR 4.x）&#x2F; <code>52 61 72 21 1A 07 01 00</code>（RAR 5.x）</td><td>区分 RAR 版本的关键在第 8 字节（00&#x2F;01）</td></tr><tr><td>7Z</td><td>.7z</td><td><code>37 7A BC AF 27 1C</code></td><td>固定 6 字节开头，专属特征</td></tr><tr><td>EXE（Windows）</td><td>.exe</td><td><code>4D 5A</code>（MZ）</td><td>PE 格式可执行文件，前 2 字节必为 MZ，后续会有<code>50 45 00 00</code>（PE）</td></tr><tr><td>APK</td><td>.apk</td><td><code>50 4B 03 04</code></td><td>本质是 ZIP 压缩包，特征与 ZIP 一致，可解压查看内部文件</td></tr></tbody></table><h4 id="五、数据库-系统类"><a href="#五、数据库-系统类" class="headerlink" title="五、数据库 &#x2F; 系统类"></a>五、数据库 &#x2F; 系统类</h4><table><thead><tr><th>文件格式</th><th>扩展名</th><th>核心 16 进制特征（开头字节）</th><th>补充说明</th></tr></thead><tbody><tr><td>SQLite</td><td>.db&#x2F;.sqlite</td><td><code>53 51 4C 69 74 65 20 66 6F 72 6D 61 74 20 33 00</code>（SQLite format 3）</td><td>前 16 字节固定，是最常见的.db 文件特征</td></tr><tr><td>Access</td><td>.mdb&#x2F;.accdb</td><td><code>53 74 61 6E 64 61 72 64 20 4A 65 74 20 44 42</code>（Standard Jet DB）</td><td>新版 accdb 为<code>00 01 00 00 53 74 61 6E 64 61 72 64 20 41 43 45</code></td></tr><tr><td>ISO（镜像）</td><td>.iso</td><td><code>43 44 30 30 31</code>（CD001）</td><td>位于偏移地址 0x8000 处，开头通常为 00，需跳转到该偏移查看</td></tr></tbody></table><h3 id="实用识别技巧"><a href="#实用识别技巧" class="headerlink" title="实用识别技巧"></a>实用识别技巧</h3><ol><li>查看工具：用 WinHex（Windows）、010 Editor（跨平台）、HxD（免费）等 16 进制编辑器打开文件，直接查看开头字节；</li><li>偏移注意：部分格式（如 ISO、MP4）的特征不在绝对开头，需跳转到指定偏移地址；</li><li>复合特征：若开头特征不明显，可结合后续字节（如 ZIP&#x2F;APK&#x2F;docx 均为<code>50 4B 03 04</code>，需结合扩展名 &#x2F; 后续内容进一步区分）。</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Gallery</title>
+      <link href="/Gallery/index.html"/>
+      <url>/Gallery/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>archives</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>movie</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tag</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
