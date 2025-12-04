@@ -96,39 +96,6 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<p>其实初衷是方便自己用手机也能看笔记，但是发现以前做在obsdian上的笔记里面的图片要弄到网站来麻烦的一（主要是图片太多了，然后obsdian的图片链接方式还不太一样，所以很难搞），所以这边就随缘更新了吧~</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>archives</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>movie</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -151,9 +118,42 @@
     
     
     <entry>
+      <title>archives</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tag</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<p>其实初衷是方便自己用手机也能看笔记，但是发现以前做在obsdian上的笔记里面的图片要弄到网站来麻烦的一。主要是图片太多了，然后obsdian的图片链接方式还不太一样，所以很难搞，你们如果去我github库里也可以翻到那一大堆笔记图片，真的多的真的没法搞，所以这边就随缘更新了吧~</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
